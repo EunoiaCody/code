@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单控件</title>
+</head>
+<body>
+    <form action="https://search.jd.com/search" target="_blank">
+        <label for="account">account</label>:
+        <input id="account" type="text" name="account" maxlength="10"><br>
+        <label>
+            password:
+            <input type="password" name="pwd" maxlength="10">
+        </label><br>
+        Gender:
+        <label><input type="radio" name="gender" value="male"> male</label>
+        <label><input type="radio" name="gender" value="female"> female</label>
+        <label><input type="radio" name="gender" value="other"> other</label><br>
+        Hooby:
+        <label><input type="checkbox" name="anime" value="anime" checked> anime</label>
+        <label><input type="checkbox" name="manga" value="manga"> manga</label>
+        <label><input type="checkbox" name="game" value="game"> game</label>
+        <label><input type="checkbox" name="light novel" value="light novel"> light novel</label><br>
+        <label>Other<textarea name="other" cols="23" rows="3"></textarea></label><br>
+        Regions
+        <select name="regions">
+            <option value="Asia">Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="America">America</option>
+            <option value="Africa">Africa</option>
+            <option value="Oceania">Oceania</option>
+        </select>
+        <input type="hidden" name="from" value="eunoia"><br>
+        <input type="submit" value="Confirm">
+        <input type="reset" value="Reset">
+        <button type="button">check if the account has been registered</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单控件</title>
+</head>
+<body>
+    <form action="https://search.jd.com/search" target="_blank">
+        <!-- 文本输入框 -->
+        account:<input type="text" name="account" maxlength="10"><br>
+        <!-- 密码输入框 -->
+        password:<input type="password" name="pwd" value="password" maxlength="10"><br>
+        <!-- 单选框 -->
+        Gender:
+        <input type="radio" name="gender" value="male"> male
+        <input type="radio" name="gender" value="female"> female
+        <input type="radio" name="gender" value="other"> other<br>
+        <!-- 多选框 -->
+        Hooby:
+        <input type="checkbox" name="anime" value="anime" checked> anime
+        <input type="checkbox" name="manga" value="manga"> manga
+        <input type="checkbox" name="game" value="game"> game
+        <input type="checkbox" name="light novel" value="light novel"> light novel<br>
+        <!-- 其他 -->
+        <textarea name="other" cols="23" rows="3"></textarea><br>
+        <!-- 下拉框 -->
+        <select name="regions">
+            <option value="Asia" selected>Asia</option>
+            <option value="Europe">Europe</option>
+            <option value="America">America</option>
+            <option value="Africa">Africa</option>
+            <option value="Oceania">Oceania</option>
+        </select>
+        <!-- 隐藏域 -->
+        <input type="hidden" name="from" value="eunoia"><br>
+        <!-- 确认按钮 -->
+        <!-- <button>Confirm</button> -->
+        <input type="submit" value="Confirm">
+        <!-- 重置按钮 -->   
+        <!-- <button type="reset">Reset</button> -->
+        <input type="reset" value="Reset">
+        <!-- 普通按钮 -->
+        <button type="button">check if the account has been registered</button>
+    </form>
+</body>
+</html>
