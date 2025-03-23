@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动态伪类</title>
+    <style>
+        a:link {
+            color: blueviolet;
+        }
+        a:visited {
+            color: blue;
+        }
+        a:hover {
+            color: blueviolet;
+        }
+        a:active {
+            color: black;
+        }
+        input:focus,
+        select:focus {
+            color: beige;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <a href="https://www.bilibili.com">巴拉巴拉</a>
+    <a href="https://www.youtube.com">油管</a>
+    <br>
+    <input type="text"><br>
+    <input type="text"><br>
+    <input type="text"><br>
+    <br>
+    <select>
+        <option value="dog">inu</option>
+        <option value="bird">tori</option>
+        <option value="cat">neko</option>
+    </select>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属性选择器</title>
+    <style>
+        [title] {
+            color: blueviolet;
+        }
+        [title='s'] {
+            color: aqua;
+        }
+        [title^='s'] {
+            color: blue;
+        }
+        [title$='e'] {
+            color: violet;
+        }
+        /* [title*='s'] {
+            color: black;
+        } */
+    </style>
+</head>
+<body>
+    <div title="s">a</div>
+    <div title="sa">b</div>
+    <div title="a">c</div>
+    <div title="sae">e</div>
+</body>
+</html>

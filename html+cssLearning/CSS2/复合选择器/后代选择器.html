@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代选择器</title>
+    <style>
+        ul li {
+            color: aqua;
+        }
+        ol li {
+            color: blanchedalmond;
+        }
+        ul li a {
+            color: aquamarine;
+        }
+        ol li a {
+            color: blue;
+        }
+        .animal {
+            color: violet;
+        }
+        /* .animal #neko {
+            color: pink;
+        } */
+        #neko {
+            color: pink;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>anime</li>
+        <li>comic</li>
+        <li>game</li>
+        <li>
+            <a href="#">gal</a>
+        </li>
+    </ul>
+    <hr>
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>
+            <a href="#">4</a>
+        </li>
+    </ol>
+    <hr>
+    <ul class="animal">
+        <li>dog</li>
+        <li>bird</li>
+        <li id="neko">cat</li>
+    </ul>
+</body>
+</html>
