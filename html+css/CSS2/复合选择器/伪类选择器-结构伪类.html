@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>结构伪类</title>
+    <style>
+        /* 选中的是div的第一个子元素p(第一个元素必须是p) */
+        /* div > p:first-child {
+            color: gold;
+        } */
+        /* 选的是div的后代，p必须是父类的第一个元素 */
+        div p:first-child {
+            color: gold;
+        }
+        /* p必须是父类的第一个元素 */
+        p:first-child {
+            color: gold;
+        }
+    </style>
+</head>
+<body>
+    <!-- 结构一 -->
+    <div>
+        <p>a:98</p>
+        <p>b:88</p>
+        <p>c:78</p>
+        <p>d:68</p>
+    </div>
+    <!-- 结构二 -->
+    <!-- <div>
+        <span>a:98</span>
+        <p>b:88</p>
+        <p>c:78</p>
+        <p>d:68</p>
+    </div> -->
+    <!-- 结构三 -->
+    <!-- <div>
+        <marquee>
+            <p>a:98</p>
+        </marquee>
+        <p>b:88</p>
+        <p>c:78</p>
+        <p>d:68</p>
+    </div> -->
+</body>
+</html>
