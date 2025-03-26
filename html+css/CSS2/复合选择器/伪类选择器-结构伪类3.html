@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器-结构伪类3</title>
+    <style>
+        /* 选div中倒数第3个子类p(div的所有子类元素中) */
+        /* div > p:nth-last-child(3) {
+            color: red;
+        } */
+        /* 选div中倒数第3个子类p(在所有类型为p的元素中) */
+        /* div > p:nth-last-of-type(2) {
+            color: red;
+        } */
+        /* 选择在父类中只有一个子类为span的元素 */
+        /* span:only-child {
+            color: red;
+        } */
+        /* 没有同类型的span */
+        /* span:only-of-type {
+            color: red;
+        } */
+        /* 选的是根元素 */
+        /* :root {
+            background-color: azure;
+        } */
+        div:empty {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <!-- 结构一 -->
+    <!-- <div>
+        <span>test1</span>
+        <p>a:98</p>
+        <p>b:88</p>
+        <p>c:78</p>
+        <p>d:68</p>
+        <p>e:68</p>
+        <p>f:68</p>
+        <span>test2</span>
+    </div> -->
+
+    <!-- 结构二 -->
+     <!-- <div>
+        <span>test2</span>
+     </div>
+    <div>
+        <span>test1</span>
+        <p>a:98</p>
+        <p>b:88</p>
+        <p>c:78</p>
+        <p>d:68</p>
+        <p>e:68</p>
+        <p>f:68</p>
+    </div> -->
+
+    <!-- 结构三 -->
+    <div></div>
+</body>
+</html>

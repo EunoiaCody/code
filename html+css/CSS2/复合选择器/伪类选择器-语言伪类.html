@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器-语言伪类</title>
+    <style>
+        :lang(zh-CN) {
+            color: red;
+        }
+        :lang(en) {
+            color: yellowgreen;
+        }
+        :lang(jp) {
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div>嘿</div>
+    <div lang="zh-CN">你好</div>
+    <p lang="en">Hello</p>
+    <span lang="jp">こんにちは</span>
+</body>
+</html>

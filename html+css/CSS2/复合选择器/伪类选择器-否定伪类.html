@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器-否定伪类</title>
+    <style>
+        /* 选中div>p，但排除class fail */
+        div > p:not(.fail) {
+            color: red;
+        }
+        /* 排除title开头为come的元素 */
+        div > p:not([title^="come"]) {
+            color: red;
+        }
+        /* 排除第一个元素p */
+        div > p:not(:first-child) {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!-- 结构一 -->
+    <div>
+        <p>a:98</p>
+        <p>b:88</p>
+        <p>c:78</p>
+        <p>d:68</p>
+        <p class="fail" title="come on!">e:68</p>
+        <p class="fail" title="come on!">f:68</p>
+    </div>
+</body>
+</html>

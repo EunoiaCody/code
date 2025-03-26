@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪类选择器-目标伪类</title>
+    <style>
+        div {
+            background-color: gray;
+            height: 300px;
+        }
+        div:target {
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <a href="#one">看1</a>
+    <a href="#two">看2</a>
+    <a href="#three">看3</a>
+    <a href="#four">看4</a>
+    <a href="#five">看5</a>
+    <a href="#six">看6</a>
+
+    <div id="one">a</div> <br>
+    <div id="two">b</div> <br>
+    <div id="three">c</div> <br>
+    <div id="four">d</div> <br>
+    <div id="five">e</div> <br>
+    <div id="six">f</div> <br>
+</body>
+</html>
