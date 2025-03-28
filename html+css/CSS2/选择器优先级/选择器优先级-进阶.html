@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>选择器优先级-进阶</title>
+    <style>
+        /* 权重高优先 */
+        /* 
+        权重格式: (a,b,c)
+        a: ID选择器个数
+        b: 类，伪类，属性选择器个数
+        c: 元素，伪元素选择器个数
+
+        权重比较：
+        一次比较a，b，c，先胜出者权更重
+        若权重相同，后来者居上
+         */
+        #title {
+            color: purple;
+        }
+        .container span.slogan { /* (0,2,1) */
+            color: aqua;
+        }
+        div > p > span:nth-child(1) { /* (0,1,3) */
+            color: bisque;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>
+            <span class="slogan" id="title">Easy Tech</span> <br>
+            <span>Welcome</span>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS三大特性</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        /* 层叠性，继承性，优先级 */
+        h2 {
+            color: green;
+        }
+        h2 {
+            color: blueviolet;
+        }
+        div {
+            color: rgb(154, 123, 83);
+            font-size: 40px;
+            background-color: skyblue;
+        }
+        p {
+            color: purple;
+        }
+        * {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h2 lang="en" id="title">Title</h2>
+    <hr>
+    <div>
+        in div <br>
+        <span>
+            inside div 1 <br>
+        </span>
+        <span>
+            inside div 2 <br>
+        </span>
+        <span>
+            inside div 3 <br>
+        </span>
+        <p>
+            <span>
+                in span 4
+            </span>
+        </p>
+    </div>
+</body>
+</html>
