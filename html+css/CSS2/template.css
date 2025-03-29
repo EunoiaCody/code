@@ -1,0 +1,23 @@
+h1 {
+    color: blueviolet;
+    font-size: 60px;
+}
+h2 {
+    color: blueviolet;
+    font-size: 40px;
+}
+img {
+    width: 1080px;
+}
+div {
+    color: rgb(151, 59, 237);
+}
+p {
+    color: rgb(151, 59, 237);
+}
+span {
+    color: rgb(151, 59, 237);
+}
+* {
+    background-color: aqua;
+}

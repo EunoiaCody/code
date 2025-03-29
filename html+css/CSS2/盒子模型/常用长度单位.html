@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常用长度单位</title>
+    <style>
+        html {
+            font-size: 30px;
+        }
+        #d1 {
+            /* 第一种: px */
+            width: 200px;
+            height: 200px;
+            font-size: 20px;
+            background-color: lightblue;
+        }
+        #d2 {
+            /* 第二种: em(相对于当前元素或其父元素的font-size的倍数) */
+            width: 10em;
+            height: 10em;
+            font-size: 20px;
+            background-color: lightpink;
+        }
+        #d3 {
+            /* 第三种: rem(相对于根元素的font-size的倍数) */
+            width: 10rem;
+            height: 10rem;
+            background-color: rgb(233, 149, 207);
+        }
+        #d4 {
+            width: 200px;
+            height: 200px;
+            font-size: 20px;
+            background-color: lightgray;
+        }
+        /* 第四种: %(相对于其父元素的百分比) */
+        .ins {
+            width: 50%;
+            height: 25%;
+            font-size: 20px;
+            background-color: lightgreen;
+        }
+        .t {
+            font-size: 20px;
+            text-indent: 2em;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div id="d1">1</div>
+    <hr>
+    <div id="d2">2</div>
+    <hr>
+    <div id="d3">3</div>
+    <hr>
+    <div id="d4">
+        <div class="ins"></div>
+    </div>
+    <hr>
+    <div class="t">test</div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vertical-align</title>
+    <link rel="stylesheet" href="../template.css">
+    <style>
+        div {
+            font-size: 100px;
+            background-color: skyblue;
+        }
+        span {
+            font-size: 40px;
+            background-color: blueviolet;
+            vertical-align: middle;
+        }
+        img {
+            width: 350px;
+            vertical-align: bottom;
+        }
+        .a {
+            vertical-align: bottom;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Lorem, ipsum dolor. <span>Lorem.</span>
+    </div>
+    <hr>
+    <div>
+        Lorem, ipsum dolor. <img src="https://github.com/EunoiaCody/picx-images-hosting/raw/master/壁纸/_初音ミク_未題名の四月と海_p_qVu5iOtXY_137_134.4g4amoewso.jpg" alt="">
+    </div>
+    <hr>
+    <table border="1" cellspacing="0">
+        <caption>Info</caption>
+        <thead>
+            <tr>Name</tr>
+            <th>Age</th>
+            <th>Gender</th>
+        </thead>
+        <tbody>
+            <tr height="200">
+                <td class="a">A</td>
+                <td>18</td>
+                <td>male</td>
+            </tr>
+            <tr>
+                <td>B</td>
+                <td>18</td>
+                <td>female</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

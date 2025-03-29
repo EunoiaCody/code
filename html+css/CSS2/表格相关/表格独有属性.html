@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>表格独有属性</title>
+    <style>
+        table {
+            border: 2px solid blueviolet;
+            width: 500px;
+            /* 控制表格列宽 */
+            table-layout: fixed;
+            /* 控制单元格间距,不合并边框生效 */
+            border-spacing: 0px;
+            /* 合并相邻单元格边框 */
+            border-collapse: collapse;
+            /* 隐藏没有内容的单元格,不合并边框生效 */
+            empty-cells: hide;
+            /* 设置表格标题位置 */
+            caption-side: top;
+        }
+        td, th {
+            border: 2px solid blueviolet;
+        }
+        .num,.na,.age {
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Info</caption>
+        <thead>
+            <tr>
+                <th class="num">No.</th>
+                <th class="na">name</th>
+                <th class="age">age</th>
+                <th class="sex">Gender</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Tom</td>
+                <td>18</td>
+                <td>male</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Jane</td>
+                <td>19</td>
+                <td>male</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Jenny</td>
+                <td></td>
+                <td>female</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Jessie</td>
+                <td>18</td>
+                <td>female</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
