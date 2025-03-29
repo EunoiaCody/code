@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin合并问题</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+        }
+        .box1 {
+            background-color: rgb(191, 228, 242);
+            /* margin-bottom: 110px; */
+        }
+        .box2 {
+            background-color: rgb(85, 200, 246);
+            margin-top: 110px;
+        }
+        .test {
+            width: 200px;
+            height: 200px;
+            display: inline-block;
+        }
+        .ta {
+            background-color: purple;
+            margin-right: 50px;
+        }
+        .tb {
+            background-color: tomato;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <hr>
+    <div class="test ta">a</div><div class="test tb">b</div>
+</body>
+</html>

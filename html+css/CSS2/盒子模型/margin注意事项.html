@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin注意事项</title>
+    <style>
+        .outer {
+            width: 400px;
+            height: 400px;
+            padding: 50px;
+            background-color: gray;
+        }
+        .inner {
+            width: 100px;
+            height: 100px;
+            margin: 100px;
+            background-color: orange;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+        }
+        .box1 {
+            background-color: rgb(191, 228, 242);
+        }
+        .box2 {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            background-color: rgb(85, 200, 246);
+        }
+        .box3 {
+            background-color: rgb(23, 107, 140);
+        }
+        .snd {
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        /* .d1v {
+            width: 400px;
+            height: 400px;
+            background-color: deepskyblue;
+            margin: 50px;
+        } */
+        #d1 {
+            width: 400px;
+            height: 400px;
+            background-color: deepskyblue;
+            margin: 50px;
+        }
+        img {
+            margin: 50px;
+        }
+        .one {
+            background-color: rgb(204, 228, 238);
+        }
+        .two {
+            background-color: rgb(71, 146, 176);
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-top: 5000px;
+            margin-bottom: 5000px;
+        }
+        .thr {
+            background-color: rgb(47, 113, 139);
+        }
+        .d2v {
+            width: 800px;
+            height: 100px;
+            margin-right: auto;
+            margin-left: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            background-color: deepskyblue;
+        }
+        .boxx {
+            width: 200px;
+            height: 200px;
+        }
+        .boxx1 {
+            background-color: rgb(191, 228, 242);
+        }
+        .boxx2 {
+            margin-top: -200px;
+            margin-bottom: 50px;
+            background-color: rgb(85, 200, 246);
+        }
+    </style>
+</head>
+<body>
+    <!-- 子元素的margin是参考父元素的content计算的 -->
+    <!-- <div class="outer">
+        <div class="inner"></div>
+    </div> -->
+
+    <!-- 上,左margin会影响自身,下,右margin会影响兄弟 -->
+    <!-- <div class="box box1">1</div>
+    <div class="box box2">3</div>
+    <div class="box box3">3</div>
+    <hr>
+    <img width="300px" src="../../Sources/images/_初音ミク_未題名の四月と海_p_qVu5iOtXY_137_134.4g4amoewso.jpg" alt="">
+    <img class="snd" width="300px" src="../../Sources/images/_初音ミク_未題名の四月と海_p_qVu5iOtXY_137_134.4g4amoewso.jpg" alt="">
+    <img width="300px" src="../../Sources/images/_初音ミク_未題名の四月と海_p_qVu5iOtXY_137_134.4g4amoewso.jpg" alt=""> -->
+
+    <!-- 对于行内元素,左右margin可以设置,上下的无效 -->
+    <!-- <div class="d1v" id="d1">一个块级元素</div>
+    <div class="d1v">一段文字</div> 
+    <hr>
+    <img width="300px" src="../../Sources/images/头像.jpg" alt="">
+    <div class="d1v">一段文字</div> 
+    <hr>
+    <span class="one">Lorem.</span><span class="two">Lorem.</span><span class="thr">Lorem.</span> -->
+
+    <!-- 对于块元素,marjin可以可使其居中 -->
+    <!-- <div class="d2v">Hello</div> -->
+
+    <!-- marjin可以是负值 -->
+    <div class="boxx boxx1">1</div>
+    <div class="boxx boxx2">2</div>
+</body>
+</html>
