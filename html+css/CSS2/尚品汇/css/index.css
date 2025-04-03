@@ -161,11 +161,6 @@ ul {
     background-color: orange;
     margin: 0 10px;
 }
-.side-other {
-    width: 290px;
-    height: 458px;
-    background-color: green;
-}
 .second-menu {
     width: 680px;
     height: 458px;
@@ -200,6 +195,222 @@ ul {
 }
 /* #endregion 左侧菜单 */
 
+/* #region 右侧其他 start */
 
+.side-other {
+    width: 290px;
+    height: 458px;
+    /* background-color: green; */
+}
+
+/* #region 右上其他 start */
+
+
+.side-other .msg {
+    width: 260px;
+    height: 158px;
+    border: 1px solid #d9d9d9;
+    padding: 0 14px;
+}
+.side-other .msg .title {
+    height: 38px;
+    line-height: 38px;
+    border-bottom: 1px solid #D9D9D9 ;
+}
+.side-other .msg .title span {
+    font-size: 14px;
+}
+.side-other .msg .title a {
+    font-size: 12px;
+    color: #999;
+}
+.side-other .msg .msg-list {
+    margin-top: 8px;
+}
+.side-other .msg .msg-list li {
+    height: 26px;
+    line-height: 26px;
+    color: #666;
+}
+/* #endregion 右上其他 end */
+
+/* #region 右下其他 start */
+
+.other-nav {
+    width: 290px;
+    height: 290px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.other-nav-list:first-child {
+    margin-top: 16px;
+}
+.other-nav-list:nth-child(2) {
+    margin: 17px 0;
+}
+.other-nav-list li {
+    height: 70px;
+    width: 48px;
+    float: left;
+    margin: 0 11px;
+    text-align: center;
+    cursor: pointer;
+}
+.other-nav-list li:first-child {
+    margin-left: 16px;
+}
+.other-nav-list li .picture {
+    width: 48px;
+    height: 48px;
+    background-image: url(../css/resources/images/精灵图-侧边功能.png);
+}
+.other-nav-list li span {
+    font-size: 14px;
+}
+/* #region 图标 */
+#phone {
+    background-position: 0 0;
+}
+#train {
+    background-position: -48px 0;
+}
+#oil-card {
+    background-position: -96px 0;
+}
+#white-list {
+    background-position: -144px 0;
+}
+#film {
+    background-position: 0 -48px;
+}
+#hotel {
+    background-position: -48px -48px;
+}
+#money {
+    background-position: -96px -48px;
+}
+#plane {
+    background-position: -144px -48px;
+}
+#gift-card {
+    background-position: 0 -96px;
+}
+#lottery {
+    background-position: -48px -96px;
+}
+#game {
+    background-position: -96px -96px;
+}
+#raise {
+    background-position: -144px -96px;
+}
+/* #endregion 图标 */
+
+/* #endregion 右下其他 end */
+
+/* #endregion 右侧其他 end */
 
 /* #endregion 主要内容区 end */
+
+/* #region 秒杀专场区 start */
+
+.seckill img {
+    float: left;
+    margin-right: 11px;
+}
+
+.seckill img:last-child {
+    margin-right: 0;
+}
+/* #endregion 秒杀专场区 end */
+
+/* #region 楼层 start */
+
+.floor {
+    margin-top: 48px;
+}
+.floor-name {
+    font-size: 20px;
+}
+.floor-nav {
+    height: 30px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #DD302D;
+    line-height: 30px;
+}
+.floor-nav-list li {
+    float: left;
+    font-size: 14px;
+}
+.floor-nav-list li a {
+    padding: 0 10px;
+    border-right: 1px solid #666;
+}
+.floor-nav-list li a:hover {
+    color: #DD302D;
+}
+.floor-nav-list li:first-child {
+    padding-left: 0;
+}
+.floor-nav-list li:last-child {
+    padding-right: 0;
+    border: 0;
+}
+.floor-info .item {
+    float: left;
+}
+.floor-info .item1 {
+    width: 190px;
+    height: 392px;
+    background-color: #F4F4F4;
+    padding: 20px;
+}
+.floor-info .item1 .item1-list {
+    margin-bottom: 30.01px;
+}
+.floor-info .item1 .item1-list li {
+    width: 90px;
+    height: 22px;
+    padding-bottom: 3.5px;
+    border-bottom: 1px solid #D9D9D9;
+    font-size: 16px;
+    text-align: center;
+}
+.floor-info .item1 .item1-list li:nth-child(2n-1) {
+    float: left;
+}
+.floor-info .item1 .item1-list li:nth-child(2n) {
+    float: right;
+}
+.floor-info .item1 .item1-list li:nth-child(3),
+.floor-info .item1 .item1-list li:nth-child(4){
+    margin: 14.4px 0;
+}
+.floor-info .item2 {
+    width: 340px;
+    height: 432px;
+}
+.floor-info .item3,
+.floor-info .item4,
+.floor-info .item5 {
+    width: 206px;
+    height: 432px;
+}
+.floor-info .item3 img,
+.floor-info .item4 img,
+.floor-info .item5 img {
+    border-bottom: 1px solid #E2E2E2;
+    display: block;
+}
+.floor-info .item4 {
+    border-left: 1px solid #E2E2E2;
+    border-right: 1px solid #E2E2E2;
+}
+
+/* #endregion 楼层 end */
+
+/* #region 页脚 start */
+
+
+
+/* #endregion 页脚 end */
