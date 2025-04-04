@@ -3,3 +3,4 @@ tests
 .vscode/tasks.json
 tests.dSYM/Contents/Info.plist
 tests.dSYM/Contents/Resources/Relocations/aarch64/tests.yml
+.vscode

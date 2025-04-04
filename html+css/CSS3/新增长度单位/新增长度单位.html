@@ -20,10 +20,18 @@
             width: 50vw;
             height: 20vh;
         }
+        .box3 {
+            background-color: orange;
+            /* vmax是视口宽度和高度中较大的那个的百分比 */
+            width: 50vmax;
+            /* vmin是视口宽度和高度中较小的那个的百分比 */
+            height: 20vmin;
+        }
     </style>
 </head>
 <body>
-    <div class="box1"></div>
-    <div class="box2"></div>
+    <div class="box1">像素</div>
+    <div class="box2">vw和vh</div>
+    <div class="box3">vmax和vmin</div>
 </body>
 </html>

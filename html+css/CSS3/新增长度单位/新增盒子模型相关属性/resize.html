@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resize</title>
+    <style>
+        .box1 {
+            width: 400px;
+            height: 400px;
+            background-color: orange;
+            resize: horizontal; /* 只能水平拖动 */
+            resize: vertical; /* 只能垂直拖动 */
+            resize: both; /* 水平和垂直都可以拖动 */
+            overflow: auto;
+        }
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+    
+</body>
+</html>
