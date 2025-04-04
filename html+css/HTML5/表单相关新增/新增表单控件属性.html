@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新增表单控件属性</title>
+</head>
+<body>
+    <form action="">
+        账号: <input 
+            type="text" 
+            name="usrname" 
+            placeholder="请输入帐号" 
+            required 
+            autofocus 
+            autocomplete="on"
+            pattern="\w{6}"
+        >
+        <br>
+        密码: <input type="password" name="pwd" required>
+        <br>
+        性别: 
+            <input type="radio" value="male" name="gender" required>男
+            <input type="radio" value="female" name="gender" required>女
+        <br>
+        邮箱: <input type="email" name="email" required>
+        <br>
+        爱好: 
+            <input type="checkbox" value="music" name="hobby">音乐
+            <input type="checkbox" value="movie" name="hobby">电影
+            <input type="checkbox" value="game" name="hobby">游戏
+        <br>
+        其他: <textarea name="other" id="other"></textarea>
+        <br>
+        <button>提交</button>
+    </form>
+</body>
+</html>
