@@ -11,6 +11,7 @@
             border: 2px solid black;
             margin: 0 auto;
             margin-top: 100px;
+            position: relative;
         }
         .inner {
             width: 200px;
@@ -19,14 +20,31 @@
             text-align: center;
             line-height: 200px;
 
-            transform: translateX(-50px);
-            transform: translateY(-50px);
+            transform: translateX(50px);
+            transform: translateY(-50px);/* 会覆盖上一行的translateX */
+            transform: translateX(50%);/* 自身宽度的50% */
+            transform: translateY(-50%);/* 自身高度的50% */
+            transform: translate(50px, -50px);/* 50px向右，50px向上 */
+            transform: translate(50%, -50%);/* 50%自身宽度向右，50%自身高度向上 */
+        }
+        .inner2 {
+            width: 60px;
+            height: 60px;
+            background-color: orange;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     </style>
 </head>
 <body>
     <div class="outer">
         <div class="inner">Hello</div>
+    </div>
+
+    <div class="outer">
+        <div class="inner2">Hello</div>
     </div>
 </body>
 </html>
