@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>重复渐变</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 200px;
+            border: 1px solid #000;
+            float: left;
+            margin-left: 50px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 200px;
+            color: white;
+        }
+        .box1 {
+            background-image: repeating-linear-gradient(pink,deepskyblue,blueviolet);
+        }
+        .box2 {
+            background-image: repeating-linear-gradient(to right top,pink,deepskyblue,blueviolet);
+        }
+        .box3 {
+            background-image: repeating-linear-gradient(20deg,pink,deepskyblue,blueviolet);
+        }
+        .box4 {
+            background-image: repeating-linear-gradient(pink 50px,deepskyblue 100px,blueviolet 150px);
+        }
+        .box5 {
+            background-image: repeating-linear-gradient(20deg,pink 50px,deepskyblue 100px,blueviolet 150px);
+            color: transparent;
+            font-weight: bold;
+            background-clip: text;
+            font-size: 100px;
+        }
+        .box6 {
+            background-image: radial-gradient(pink 50px, deepskyblue 100px, blueviolet 150px);
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">defult(up to down)</div>
+    <div class="box box2">用关键词调整线性渐变的方向</div>
+    <div class="box box3">用角度调整线性渐变的方向</div>
+    <div class="box box4">调整线性渐变区域</div>
+    <div class="box box6">重复径向渐变</div>
+    <div class="box box5">Hello</div>
+</body>
+</html>

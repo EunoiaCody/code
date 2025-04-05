@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>渐变小案例</title>
+    <style>
+        .box1 {
+            width: 600px;
+            height: 800px;
+            border: 1px solid #000;
+            margin: 0 auto;
+            background-image: repeating-linear-gradient(transparent 0px 29px, gray 30px);
+            padding: 20px;
+            background-clip: content-box;
+        }
+        .ball {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-image: radial-gradient(at 80px 80px,white,#333);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="ball"></div>
+</body>
+</html>

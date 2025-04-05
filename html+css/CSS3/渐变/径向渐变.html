@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>径向渐变</title>
+    <style>
+        .box {
+            width: 300px;
+            height: 300px;
+            border: 1px solid #000;
+            float: left;
+            margin-left: 50px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 300px;
+            color: white;
+        }
+        .box1 {
+            background-image: radial-gradient(pink,deepskyblue,blueviolet);
+        }
+        .box2 {
+            background-image: radial-gradient(at left top,pink,deepskyblue,blueviolet);
+        }
+        .box3 {
+            background-image: radial-gradient(at 80px 100px,pink,deepskyblue,blueviolet);
+        }
+        .box4 {
+            background-image: radial-gradient(circle, pink, deepskyblue, blueviolet);
+        }
+        .box5 {
+            background-image: radial-gradient(200px 200px, pink, deepskyblue, blueviolet);
+        }
+        .box6 {
+            background-image: radial-gradient(pink 50px, deepskyblue 100px, blueviolet 150px);
+        }
+        .box7 {
+            background-image: radial-gradient(200px 200px at 80px 100px, pink, deepskyblue, blueviolet);
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">defult</div>
+    <div class="box box2">通过关键词调整径向渐变圆心的位置</div>
+    <div class="box box3">通过坐标调整径向渐变圆心的位置</div>
+    <div class="box box4">通过circle调整径向渐变为正圆</div>
+    <div class="box box5">通过像素值调整径向渐变为正圆</div>
+    <div class="box box6">调整径向渐变的区域</div>
+    <div class="box box7">综合写法</div>
+</body>
+</html>
