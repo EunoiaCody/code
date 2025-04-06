@@ -1,11 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>缩放</title>
+    <style>
+        .outer {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        .inner {
+            width: 200px;
+            height: 200px;
+            background-color: deepskyblue;
+            text-align: center;
+            line-height: 200px;
+
+            transform: scaleX(-1) scaleY(-1);
+            transform: scale(-1);
+        }
+        span {
+            display: inline-block;
+            font-size: 12px;
+            transform: scale(0.5);
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="outer">
+        <div class="inner">Hello</div>
+    </div>
+    <span>H</span>
 </body>
 </html>

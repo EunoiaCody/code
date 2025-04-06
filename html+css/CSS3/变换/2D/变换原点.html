@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>位移</title>
+    <style>
+        .outer {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            margin: 0 auto;
+            margin-top: 100px;
+            position: relative;
+        }
+        .inner {
+            width: 200px;
+            height: 200px;
+            background-color: deepskyblue;
+            text-align: center;
+            line-height: 200px;
+
+            /* transform-origin: left top; */
+            /* transform-origin: 50px 50px; */
+            /* transform-origin: 25% 25%; */
+            /* transform-origin: left; */
+
+            transform-origin: left top;
+
+            /* 有影响 */
+            /* transform: rotate(0deg); */
+
+            /* 有影响 */
+            /* transform: scale(0.5); */
+
+            /* 有影响 */
+            transform: translate(100px, 100px);
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">Hello</div>
+    </div>
+</body>
+</html>
