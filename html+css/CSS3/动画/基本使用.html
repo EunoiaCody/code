@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基本使用</title>
+    <style>
+        .outer {
+            width: 1000px;
+            height: 100px;
+            border: 1px solid black;
+        }
+        .inner {
+            width: 100px;
+            height: 100px;
+            background-color: aqua;
+            /* 应用动画到元素 */
+            animation-name: move-right2;
+            /* 动画持续时间 */
+            animation-duration: 3s;
+            /* 动画延迟时间 */
+            animation-delay: 0.3s;
+        }
+        /* 定义一组关键帧 */
+        @keyframes move-right {
+            /* 第一帧 */
+            from {
+                transform: translate(0);
+            }
+            /* 最后一帧 */
+            to {
+                transform: translate(900px);
+                background-color: blueviolet;
+            }
+        }
+        @keyframes move-right2 {
+            0% {
+
+            }
+            50% {
+                background-color: purple;
+            }
+            100% {
+                transform: translate(900px);
+                background-color: blueviolet;
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+</html>
