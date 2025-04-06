@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多列布局案例</title>
+    <style>
+        .outer {
+            width: 1000px;
+            margin: 0 auto;
+
+            /* 直接指定列数 */
+            /* column-count: 3; */
+
+            /* 指定每一列的宽度,自动计算列数 */
+            /* column-width: 220px; */
+
+            /* 复合属性 */
+            /* columns: 6 220px; */
+            columns: 4;
+
+            /* 调整列间距 */
+            column-gap: 20px;
+
+            /* column-rule-width: 2px;
+            column-rule-style: dashed;
+            column-rule-color: blueviolet; */
+            column-rule: 2px dashed blueviolet;
+        }
+        h1 {
+            column-span: all;
+            text-align: center;
+            font-size: 35px;
+        }
+        img {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <h1>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolorum, dolore dolores eveniet obcaecati in hic illum saepe rem aspernatur.</p>
+        <img src="../../Sources/images/_初音ミク_未題名の四月と海_p_qVu5iOtXY_137_134.4g4amoewso.jpg" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quae perspiciatis laboriosam animi ducimus magni cum a dicta tempore. Earum non eaque vero quia hic veritatis? Repudiandae accusantium beatae praesentium velit commodi? Tempore ex sed nesciunt. Facere, quasi ad, laborum vel iusto eligendi eaque quae itaque tenetur similique officiis quisquam?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat officiis quis eveniet officia in ab repudiandae, mollitia, assumenda odio quos ullam at ipsa inventore. Placeat inventore veritatis rerum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolorum, dolore dolores eveniet obcaecati in hic illum saepe rem aspernatur.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quae perspiciatis laboriosam animi ducimus magni cum a dicta tempore. Earum non eaque vero quia hic veritatis? Repudiandae accusantium beatae praesentium velit commodi? Tempore ex sed nesciunt. Facere, quasi ad, laborum vel iusto eligendi eaque quae itaque tenetur similique officiis quisquam?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat officiis quis eveniet officia in ab repudiandae, mollitia, assumenda odio quos ullam at ipsa inventore. Placeat inventore veritatis rerum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolorum, dolore dolores eveniet obcaecati in hic illum saepe rem aspernatur.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quae perspiciatis laboriosam animi ducimus magni cum a dicta tempore. Earum non eaque vero quia hic veritatis? Repudiandae accusantium beatae praesentium velit commodi? Tempore ex sed nesciunt. Facere, quasi ad, laborum vel iusto eligendi eaque quae itaque tenetur similique officiis quisquam?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat officiis quis eveniet officia in ab repudiandae, mollitia, assumenda odio quos ullam at ipsa inventore. Placeat inventore veritatis rerum.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dolorum, dolore dolores eveniet obcaecati in hic illum saepe rem aspernatur.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum quae perspiciatis laboriosam animi ducimus magni cum a dicta tempore. Earum non eaque vero quia hic veritatis? Repudiandae accusantium beatae praesentium velit commodi? Tempore ex sed nesciunt. Facere, quasi ad, laborum vel iusto eligendi eaque quae itaque tenetur similique officiis quisquam?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat officiis quis eveniet officia in ab repudiandae, mollitia, assumenda odio quos ullam at ipsa inventore. Placeat inventore veritatis rerum.</p>
+    </div>
+</body>
+</html>
