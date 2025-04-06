@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>位移</title>
+    <title>背部可见性</title>
     <style>
         .outer {
             width: 200px;
             height: 200px;
             border: 2px solid black;
             margin: 0 auto;
-            margin-top: 100px;
+            margin-top: 100px; 
             position: relative;
 
             /* 3D空间 */
@@ -27,8 +27,8 @@
             text-align: center;
             line-height: 200px;
 
-            transform: translateZ(50px);
-            transform: translate3d(100px,100px,50px);
+            transform: rotateY(0deg);
+            backface-visibility: hidden;
         }
     </style>
 </head>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>缩放</title>
+    <style>
+        .outer {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+            margin: 0 auto;
+            margin-top: 100px;
+            position: relative;
+
+            /* 3D空间 */
+            transform-style: preserve-3d;
+            /* 3D景深(有透视) */
+            perspective: 500px;
+            /* 透视点位置 */
+            perspective-origin: 102px 102px;
+        }
+        .inner {
+            width: 200px;
+            height: 200px;
+            background-color: rgba(0, 191, 255, 0.7);
+            text-align: center;
+            line-height: 200px;
+
+            transform: scaleZ(4) rotateY(90deg);
+            transform: scale3d(1.5, 1.5, 1.5) rotateY(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">Hello</div>
+    </div>
+</body>
+</html>
