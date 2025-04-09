@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>主轴换行方式</title>
+    <title>flex-flow</title>
     <style>
         .outer {
             width: 1000px;
-            height: 800px;
+            height: 600px;
             background-color: #888;
             margin: 0 auto;
             display: flex;
+            /* flex-direction: row;
+            flex-wrap: wrap; */
 
-            flex-wrap: wrap;
-            flex-wrap: wrap-reverse;
+            flex-flow: row wrap;
         }
         .inner {
             width: 200px;
@@ -37,15 +38,6 @@
         <div class="inner">9</div>
         <div class="inner">10</div>
         <div class="inner">11</div>
-        <div class="inner">12</div>
-        <div class="inner">13</div>
-        <div class="inner">14</div>
-        <div class="inner">15</div>
-        <div class="inner">16</div>
-        <div class="inner">17</div>
-        <div class="inner">18</div>
-        <div class="inner">19</div>
-        <div class="inner">20</div>
     </div>
 </body>
 </html>

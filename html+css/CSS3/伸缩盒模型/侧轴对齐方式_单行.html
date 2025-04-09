@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>侧轴对齐方式_单行</title>
+    <style>
+        .outer {
+            width: 1000px;
+            height: 600px;
+            background-color: #888;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            /* 主轴对齐方式,主轴起始位置 */
+            justify-content: flex-start;
+
+            /* 侧轴对齐方式,侧轴起始位置 */
+            /* align-items: flex-start; */
+
+            /* 侧轴对齐方式,侧轴起始位置 */
+            /* align-items: flex-end; */
+
+            /* 侧轴对齐方式,侧轴中间位置 */
+            /* align-items: center; */
+
+            /* 侧轴对齐方式,侧轴中间位置 */
+            /* align-items: baseline; */
+
+            /* 侧轴对齐方式,拉伸到整个父容器(未设置高度时) */
+            align-items: stretch;
+        }
+        .inner {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        .inner2 {
+            height: 300px;
+            font-size: 30px;
+        }
+        .inner3 {
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">1x</div>
+        <div class="inner inner2">2x</div>
+        <div class="inner inner3">3x</div>
+    </div>
+</body>
+</html>
