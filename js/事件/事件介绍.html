@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>事件介绍</title>
+</head>
+
+<body>
+    <button>改变颜色</button>
+
+    <form>
+        <div>
+            <lable for="fname">First name: </lable>
+            <input type="text" id="fname">
+        </div>
+        <div>
+            <label for="lname">Last name: </label>
+            <input type="text" id="lname">
+        </div>
+        <div>
+            <input type="submit" id="idsubmit">
+        </div>
+    </form>
+    <p></p>
+
+    <script>
+        const btn = document.querySelector("button");
+
+        function random(number) {
+            return Math.floor(Math.random() * (number + 1));
+        }
+
+        function changeBackground() {
+            const rndCol = `rgb(${random(255)}, ${random(255)}, ${random(255)})`;
+            document.body.style.backgroundColor = rndCol;
+        }
+
+        btn.addEventListener("click", changeBackground);
+
+        const form = document.querySelector('form');
+        const fname = document.getElementById('fname');
+        const lname = document.getElementById('lname');
+        const para = document.querySelector('p');
+
+        form.addEventListener('submit', (e) => {
+            if (fname.value === '' || lname.value === '') {
+                e.preventDefault();
+                para.textContent = 'You need to fill in both names!';
+            }
+        });
+    </script>
+</body>
+
+</html>
