@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>变量</title>
+</head>
+<body>
+    <button>Press me</button>
+
+    <script>
+        const button = document.querySelector("button");
+
+        button.onclick = function () {
+            let name = prompt("What is your name?");
+            alert("Hello " + name + ", nice to see you!");
+        };
+
+        let master = "Eunoia Cody";
+
+        let myAge = 18;
+
+        let bool = true;
+        bool = 6 < 3;
+
+        let myNumberArray = [10, 15, 40];
+        let myNumber = myNumberArray[0];
+
+        let cat = { name: "neko", breed: "Felis catus" };
+        let kittyName = cat.name;
+    </script>
+</body>
+</html>

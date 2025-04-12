@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>猜数字小游戏</title>
+    <script type="module" src="./猜数字小游戏.js"></script>
+</head>
+<body>
+    <h1>猜数字小游戏</h1>
+
+    <p>选择一个1~100的自然数,看看和我猜的一不一样</p>
+
+    <div class="form">
+        <lable for="guessField">输入你猜的数字:</lable>
+        <input type="number" min="1" max="100" required id="guessField" class="guessField">
+        <input type="submit" value="Submit guess" class="guessSubmit">
+    </div>
+
+    <div class="resultParas">
+        <p class="guesses"></p>
+        <p class="lastResult"></p>
+        <p class="lowOrHi"></p>
+    </div>
+</body>
+</html>
