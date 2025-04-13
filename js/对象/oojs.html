@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Object-oriented JavaScript example</title>
+</head>
+
+<body>
+  <p>This example requires you to enter commands in your browser's JavaScript console (see <a
+      href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_are_browser_developer_tools">What are
+      browser developer tools</a> for more information).</p>
+
+  <script>
+
+    const master = {
+      name: {
+        first: 'Eunoia',
+        last: 'Cody',
+      },
+      age: 18,
+      bio() { console.log(`${this.name[0]} ${this.name[1]} is ${this.age} yaers old now`); },
+      intro() { console.log(`Hello! I'm ${this.name[0]}`); },
+    };
+
+    const visitor1 = {
+      name: "Chris",
+      introduceSelf() {
+        console.log(`Hello! I'm ${this.name}`);
+      },
+    }
+
+    const visitor2 = {
+      name: "Deepti",
+      introduceSelf() {
+        console.log(`Hello! I'm ${this.name}`);
+      },
+    };
+
+    function logProperty(propertyName) {
+      console.log(person[propertyName]); // 必须使用括号而不是点
+    };
+
+    function creatPerson(name) { // 这样过于冗长
+      const obj = {};
+      obj.name = name;
+      obj.intro = function () {
+        console.log(`Hello! I'm ${this.name}`);
+      }
+      return obj;
+    };
+
+    // 构造函数
+    function Person(name) {
+      this.name = name;
+      this.intro = function () {
+        console.log(`Hello! I'm ${this.name}`);
+      }
+    }
+    // const salva = new Person('Salva');
+    // salva.intro();
+
+  </script>
+</body>
+
+</html>

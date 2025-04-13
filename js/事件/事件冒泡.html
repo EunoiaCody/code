@@ -25,13 +25,20 @@
     </div>
 
     <script>
-        const btn = document.querySelector('buttom');
+        const btn = document.querySelector("button");
         const box = document.querySelector("div");
         const video = document.querySelector("video");
 
-        btn.addEventListener('click', () => box.classList.remove('hidden'));
-        video.addEventListener('click', () => video.play());
-        box.addEventListener('click', () => box.classList.add('hidden'));
+        btn.addEventListener("click", () => box.classList.remove("hidden"));
+
+        video.addEventListener("click", (event) => {
+            event.stopPropagation(); // 防止触发其他事件
+            video.play();
+        });
+
+        box.addEventListener("click", () => box.classList.add("hidden"));
+
+
     </script>
 </body>
 
