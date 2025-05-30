@@ -1,0 +1,105 @@
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24
+}
+.cherry-bomb-one-regular {
+  font-family: "Cherry Bomb One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* #region基础设置 start*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.leftfix {
+  float: left;
+}
+
+.rightfix {
+  float: right;
+}
+
+.clrfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+}
+
+ul {
+  list-style: none;
+}
+
+/* #endregion基础设置 end */
+
+body .topbar {
+  background-color: blueviolet;
+}
+
+.topbar .container {
+  display: flex;
+  justify-content: space-evenly;
+  height: 130px;
+  align-items: center;
+}
+.topbar .container .logo {
+  height: 100px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.topbar .container .main-nav {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+.topbar .container .main-nav li {
+  cursor: pointer;
+  color: white;
+  transition: box-shadow 0.2s, background 0.2s, border-radius 0.2s;
+  font-size: 20px;
+}
+.topbar .container .main-nav li:hover {
+  background: rgb(80, 18, 138);
+  box-shadow: 0 0 0 10px rgb(57, 13, 98);
+  border-radius: 8px;
+}
+
+.topbar .container .user-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.topbar .container .user-nav li {
+  cursor: pointer;
+  transition: box-shadow 0.2s, background 0.2s, border-radius 0.2s;
+}
+.topbar .container .user-nav li img {
+  height: 80px;
+  border-radius: 50%;
+  transition: box-shadow 0.2s, background 0.2s, border-radius 0.2s;
+}
+.topbar .container .user-nav li img:hover {
+  box-shadow: 0 0 0 10px rgb(57, 13, 98);
+}
+.topbar .container .user-nav li i {
+  font-size: 50px;
+  color: white;
+  margin-right: 10px;
+  border-radius: 50%;
+  transition: box-shadow 0.2s, background 0.2s, border-radius 0.2s;
+}
+.topbar .container .user-nav li i:hover {
+  box-shadow: 0 0 0 10px rgb(57, 13, 98);
+}
