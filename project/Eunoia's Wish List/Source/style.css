@@ -11,6 +11,7 @@
   font-style: normal;
 }
 
+
 /* #region基础设置 start*/
 * {
   margin: 0;
@@ -42,26 +43,32 @@ ul {
 
 /* #endregion基础设置 end */
 
+
+
 body .topbar {
   background-color: blueviolet;
 }
 
 .topbar .container {
   display: flex;
-  justify-content: space-evenly;
-  height: 130px;
+  justify-content: space-between; /* 两端对齐 */
   align-items: center;
+  height: 130px;
+  padding: 0 32px; /* 增加左右内边距 */
 }
 .topbar .container .logo {
   height: 100px;
   border-radius: 24px;
   cursor: pointer;
+  margin-right: 32px; /* 与主导航拉开距离 */
 }
 
 .topbar .container .main-nav {
   display: flex;
   gap: 24px;
   align-items: center;
+  flex: 1;
+  justify-content: center; /* 居中主导航 */
 }
 .topbar .container .main-nav li {
   cursor: pointer;
@@ -78,7 +85,9 @@ body .topbar {
 .topbar .container .user-nav {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-left: 32px; /* 与主导航拉开距离 */
 }
 
 .topbar .container .user-nav li {
@@ -102,4 +111,121 @@ body .topbar {
 }
 .topbar .container .user-nav li i:hover {
   box-shadow: 0 0 0 10px rgb(57, 13, 98);
+}
+
+/* 默认隐藏菜单按钮 */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  body .topbar {
+    background-color: blueviolet;
+  }
+
+  .topbar .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    padding: 0 12px;
+  }
+  .topbar .container .logo {
+    height: 48px;
+    margin: 0;
+  }
+  .topbar .container .main-nav {
+    flex: 1;
+    justify-content: center;
+    gap: 8px;
+  }
+  .topbar .container .main-nav li {
+    font-size: 14px;
+    padding: 8px 0;
+    width: auto;
+    border-bottom: none;
+  }
+  .topbar .container .user-nav {
+    gap: 8px;
+    margin: 0;
+  }
+  .topbar .container .user-nav li img {
+    height: 32px;
+  }
+  .topbar .container .user-nav li i {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 510px) {
+  body .topbar {
+      background-color: blueviolet;
+    }
+  
+    .topbar .container {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      height: auto;
+      padding: 0 12px;
+    }
+  
+    .topbar .container .logo {
+      height: 20px;
+      margin: 0;
+    }
+  
+    .topbar .container .main-nav {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      background: rgba(80,18,138,0.95);
+      gap: 0;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      border-radius: 18px;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s cubic-bezier(.4,2,.6,1), border-radius 0.3s;
+      margin-top: 8px;
+    }
+    .topbar .container .main-nav.active {
+      display: flex;
+      max-height: 500px; /* 足够大以显示所有菜单项 */
+      border-radius: 18px;
+    }
+  
+    .topbar .container .main-nav li {
+      font-size: 16px;
+      padding: 5px 0;
+      width: auto;
+      border-bottom: none;
+    }
+  
+    .topbar .container .user-nav {
+      gap: 3px;
+      margin: 0;
+    }
+  
+    .topbar .container .user-nav li img {
+      height: 32px;
+    }
+  
+    .topbar .container .user-nav li i {
+      font-size: 12px;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+    .topbar .container {
+      position: relative;
+    }
 }
