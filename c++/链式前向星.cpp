@@ -3,26 +3,30 @@ using namespace std;
 
 const int maxn = 1001, maxm = 100001;
 
-struct Edge {
-	int next;//ÏÂÒ»Ìõ±ßµÄ±àºÅ 
-	int to;//ÕâÌõ±ßµ½´ïµÄµã 
-	int dis;//ÕâÌõ±ßµÄ³¤¶È 
+struct Edge
+{
+	int next; // ä¸‹ä¸€æ¡è¾¹çš„ç¼–å·
+	int to;		// ï¿½ï¿½ï¿½ï¿½ï¿½ßµï¿½ï¿½ï¿½Äµï¿½
+	int dis;	// ï¿½ï¿½ï¿½ï¿½ï¿½ßµÄ³ï¿½ï¿½ï¿½
 } edge[maxm];
 
 int head[maxn], num_edge, n, m, u, v, d;
 
-void add_edge(int from, int to, int dis) { //¼ÓÈëÒ»Ìõ´Ófromµ½to¾àÀëÎªdisµÄµ¥Ïò±ß 
+void add_edge(int from, int to, int dis)
+{ // ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½fromï¿½ï¿½toï¿½ï¿½ï¿½ï¿½Îªdisï¿½Äµï¿½ï¿½ï¿½ï¿½
 	edge[++num_edge].next = head[from];
 	edge[num_edge].to = to;
 	edge[num_edge].dis = dis;
 	head[from] = num_edge;
 }
 
-int main() {
+int main()
+{
 	memset(head, -1, sizeof(head));
 	num_edge = 0;
 	cin >> n >> m;
-	for (int i = 1; i <= m; i++) {
+	for (int i = 1; i <= m; i++)
+	{
 		cin >> u >> v >> d;
 		add_edge(u, v, d);
 	}
@@ -33,14 +37,14 @@ int main() {
 	return 0;
 }
 
-//5 10
-//1 2 2
-//4 2 5
-//2 4 5
-//3 1 1
-//2 3 1
-//5 1 6
-//4 1 4
-//3 2 1
-//1 5 6
-//2 5 5
+// 5 10
+// 1 2 2
+// 4 2 5
+// 2 4 5
+// 3 1 1
+// 2 3 1
+// 5 1 6
+// 4 1 4
+// 3 2 1
+// 1 5 6
+// 2 5 5
