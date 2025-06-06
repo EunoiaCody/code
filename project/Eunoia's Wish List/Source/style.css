@@ -43,7 +43,7 @@ ul {
 
 /* #endregion基础设置 end */
 
-
+/* #region 顶部header */
 
 body .topbar {
   background-color: blueviolet;
@@ -124,7 +124,52 @@ body .topbar {
   margin-right: 12px;
 }
 
-/* 移动端适配 */
+
+/* #endregion 顶部header end */
+
+/* #region main-page */
+
+.main-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-page .container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-page .container ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 20px;
+}
+
+.main-page .container ul li {
+  width: 300px;
+  height: 400px;
+  background-color: blueviolet;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* #endregion */
+
+/* #region移动端适配 */
 @media (max-width: 768px) {
   body .topbar {
     background-color: blueviolet;
@@ -229,3 +274,4 @@ body .topbar {
       position: relative;
     }
 }
+/* #endregion */
